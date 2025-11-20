@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Panel Akses</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* --- CSS MINIFIED --- */
+    :root{--blur-strength:15px;--card-bg:rgba(25,25,40,0.85);--modal-bg:rgba(20,20,35,0.98);--border-color:rgba(255,255,255,0.15);--text-primary:#fff;--text-secondary:#c0c0d0;--accent-primary:#6a11cb;--accent-secondary:#2575fc;--whatsapp-color:#25D366;--whatsapp-hover:#128C7E}.video-background{position:fixed;top:0;left:0;width:100%;height:100%;overflow:hidden;z-index:-1}.video-background video{min-width:100%;min-height:100%;width:auto;height:auto;object-fit:cover;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}body{margin:0;font-family:'Poppins',sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;color:var(--text-primary);overflow-y:auto}.card{background:var(--card-bg);backdrop-filter:blur(var(--blur-strength));-webkit-backdrop-filter:blur(var(--blur-strength));padding:40px;border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,0.4);max-width:400px;width:90%;text-align:center;border:1px solid var(--border-color);animation:fadeInCard .8s ease-out forwards;margin:20px 0;z-index:1}@keyframes fadeInCard{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.login-logo{width:80px;height:80px;margin:0 auto 20px;border-radius:50%;background:rgba(255,255,255,0.05);border:2px solid var(--accent-secondary);display:flex;justify-content:center;align-items:center;box-shadow:0 0 15px rgba(37,117,252,0.5)}.login-logo i{font-size:35px;color:var(--text-primary)}h2{margin:0 0 5px;font-size:24px;font-weight:600}p.sub{margin:0 0 25px;color:var(--text-secondary);font-size:14px}label{display:block;text-align:left;margin-bottom:8px;font-size:13px;color:var(--text-secondary)}input{width:100%;padding:14px;margin-bottom:20px;border:1px solid var(--border-color);border-radius:10px;background:rgba(255,255,255,0.05);color:var(--text-primary);box-sizing:border-box;outline:none;transition:.3s}input:focus{border-color:var(--accent-secondary);background:rgba(255,255,255,0.1)}button{width:100%;padding:14px;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;transition:all .3s ease;display:flex;justify-content:center;align-items:center;gap:10px}.btn-login{background:linear-gradient(90deg,var(--accent-primary),var(--accent-secondary));color:#fff;margin-bottom:15px}.btn-buy{background-color:var(--whatsapp-color);color:#fff;border:1px solid rgba(255,255,255,0.1)}.btn-buy:hover{background-color:var(--whatsapp-hover);transform:translateY(-2px)}.info-box{margin-top:20px;text-align:left;background:rgba(0,0,0,0.25);border-radius:10px;padding:15px;border:1px solid rgba(255,255,255,0.05)}.info-list{margin:0;padding-left:18px;color:var(--text-secondary);font-size:11px}.info-title{font-size:12px;font-weight:700;margin-bottom:5px;display:block}.title-benefit{color:#4ade80}.title-rules{color:#ff6b6b}.divider{margin:20px 0;display:flex;align-items:center;color:var(--text-secondary);font-size:12px}.divider::before,.divider::after{content:"";flex:1;border-bottom:1px solid rgba(255,255,255,0.1)}.divider span{padding:0 10px}.error-box{background:rgba(255,50,50,0.2);border:1px solid #ff6b6b;color:#ffadad;padding:12px;border-radius:8px;font-size:13px;margin-bottom:20px;display:none}.error-box.show{display:block;animation:shake .4s}@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);backdrop-filter:blur(5px);z-index:999;display:none;justify-content:center;align-items:center;opacity:0;transition:opacity .3s ease}.modal-overlay.active{display:flex;opacity:1}.modal-content{background:var(--modal-bg);width:90%;max-width:400px;padding:30px;border-radius:20px;border:1px solid var(--border-color);position:relative;text-align:center;transform:scale(0.9);transition:transform .3s}.modal-overlay.active .modal-content{transform:scale(1)}.close-modal{position:absolute;top:15px;right:15px;background:transparent;border:none;color:var(--text-secondary);font-size:20px;cursor:pointer}.step-section{display:none;animation:fadeIn .5s}.step-section.active{display:block}.qris-wrapper{position:relative;width:200px;height:200px;margin:0 auto 15px;border-radius:10px;overflow:hidden;cursor:zoom-in;border:2px solid rgba(255,255,255,0.2);background:#fff}.qris-wrapper img{width:100%;height:100%;object-fit:contain}.zoom-hint{position:absolute;bottom:0;left:0;width:100%;background:rgba(0,0,0,0.6);color:#fff;font-size:10px;padding:4px 0;text-align:center}.btn-download-qris{display:inline-flex;align-items:center;justify-content:center;gap:5px;background:rgba(255,255,255,0.1);color:var(--text-secondary);padding:8px 15px;border-radius:20px;font-size:11px;text-decoration:none;border:1px solid rgba(255,255,255,0.2);margin-bottom:15px;transition:.2s}.btn-download-qris:hover{background:rgba(255,255,255,0.2);color:#fff}.zoom-overlay{display:none;position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.95);cursor:zoom-out;justify-content:center;align-items:center;animation:fadeIn .3s}.zoom-overlay img{max-width:90%;max-height:90%;border-radius:5px;box-shadow:0 0 20px rgba(255,255,255,0.1)}.zoom-close-btn{position:absolute;top:20px;right:20px;color:#fff;font-size:30px;cursor:pointer}.btn-next{background:var(--accent-secondary);color:#fff}.btn-submit{background:var(--whatsapp-color);color:#fff}.btn-back{background:transparent;border:1px solid var(--border-color);color:var(--text-secondary);margin-top:10px}.spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+</head>
+<body>
+
+<div class="video-background">
+  <video autoplay muted loop playsinline poster="iboy.jpg"> 
+    <source src="iboyy.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div id="zoom-overlay" class="zoom-overlay" onclick="closeQrisZoom()">
+    <span class="zoom-close-btn">&times;</span>
+    <img id="zoomed-img" src="" alt="QRIS Zoom">
+</div>
+
+<div class="card">
+    <div class="login-logo"><i class="fas fa-shield-alt"></i></div>
+    <h2>Panel Login</h2>
+    <p class="sub">Masukkan akses akun Anda</p>
+    <div id="error-message" class="error-box"></div>
+
+    <form id="login-form">
+        <label>Username</label>
+        <input type="text" id="login-username" placeholder="Contoh: iboy" required autocomplete="off">
+        <label>Password</label>
+        <input type="password" id="login-password" placeholder="••••••••" required>
+        <button type="submit" id="login-button" class="btn-login"><i class="fas fa-sign-in-alt"></i> Masuk Panel</button>
+    </form>
+    
+    <div class="divider"><span>ATAU</span></div>
+    
+    <button type="button" class="btn-buy" onclick="openBuyModal()">
+        <i class="fab fa-whatsapp"></i> Beli Akses (Rp 5.000)
+    </button>
+
+    <div class="info-box">
+        <div style="margin-bottom: 12px;">
+            <span class="info-title title-benefit"><i class="fas fa-check-circle"></i> Benefit:</span>
+            <ul class="info-list">
+                <li>Create panel sepuasnya</li>
+                <li>Bisa dijual kembali panelnya</li>
+                <li>Bisa balik modal 100%</li>
+            </ul>
+        </div>
+        <div>
+            <span class="info-title title-rules"><i class="fas fa-exclamation-triangle"></i> Rules:</span>
+            <ul class="info-list">
+                <li>No DDOS / Attack</li>
+                <li>No Mining / Spam Bot</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay" id="buyModal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeBuyModal()">&times;</button>
+
+        <div id="step-1" class="step-section active">
+            <h3><i class="fas fa-qrcode"></i> Pembayaran</h3>
+            <p class="sub">Scan QRIS senilai <b>Rp 5.000</b></p>
+            
+            <div class="qris-wrapper" onclick="openQrisZoom()">
+                <img src="qris.jpg" id="qris-source" alt="Scan QRIS" onerror="this.src='https://via.placeholder.com/200?text=FOTO+QRIS+KAMU'">
+                <div class="zoom-hint"><i class="fas fa-search-plus"></i> Klik untuk memperbesar</div>
+            </div>
+
+            <a href="qris.jpg" download="QRIS_PAYMENT_IBOYY.jpg" class="btn-download-qris">
+                <i class="fas fa-download"></i> Simpan Gambar QRIS
+            </a>
+            
+            <p style="font-size: 11px; color: var(--text-secondary); margin-bottom: 15px;">
+                Setelah bayar, silakan klik tombol di bawah.
+            </p>
+            <button class="btn-next" onclick="goToStep(2)">Saya Sudah Bayar <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <div id="step-2" class="step-section">
+            <h3><i class="fas fa-file-invoice"></i> Bukti & Data</h3>
+            <p class="sub">Kirim bukti dan buat akun Anda.</p>
+
+            <form id="register-form">
+                <label>Upload Bukti Bayar</label>
+                <input type="file" id="payment-proof" accept="image/*" required style="padding: 10px;">
+
+                <div class="divider"><span>DATA AKUN BARU</span></div>
+
+                <label>Username</label>
+                <input type="text" id="reg-username" placeholder="Username baru" required>
+                <label>Password</label>
+                <input type="text" id="reg-password" placeholder="Password baru" required>
+                <label>WhatsApp</label>
+                <input type="number" id="reg-contact" placeholder="08xxxxxxxx" required>
+
+                <button type="submit" id="btn-submit-data" class="btn-submit">
+                    <i class="fab fa-telegram-plane"></i> Kirim & Aktivasi
+                </button>
+            </form>
+            <button class="btn-back" onclick="goToStep(1)">Kembali</button>
+        </div>
+    </div>
+</div>
+
+<script>
+/* --- SECURED SCRIPT BY IBOYY ASSISTANT --- */
+(function(){
+    // Data Sensitif di-encode (Base64) agar tidak terbaca langsung
+    const _0xconfig = {
+        bot: atob("ODUxMzg5Mjc0MzpBQUdyUTNMaGV3U2JxLXFnR29hT3FoUVhGWFNFc1NxQmpUZw=="), // Token Telegram
+        chat: atob("ODE0Mjk1MjAwMw=="), // Chat ID
+        adm: atob("NjI4MzEwOTEwNTMwOA=="), // Nomor Admin
+        // Format User:Password
+        db: { 
+            "iboyy": atob("aWJveXkxMg=="), 
+            "member1": atob("MTIzNDU=") 
+        }
+    };
+
+    // Zoom Logic
+    window.openQrisZoom = function() {
+        document.getElementById('zoomed-img').src = document.getElementById('qris-source').src;
+        document.getElementById('zoom-overlay').style.display = 'flex';
+    };
+    window.closeQrisZoom = function() { document.getElementById('zoom-overlay').style.display = 'none'; };
+
+    // Modal Logic
+    const modal = document.getElementById('buyModal');
+    window.openBuyModal = function() { modal.classList.add('active'); goToStep(1); };
+    window.closeBuyModal = function() { modal.classList.remove('active'); };
+    window.goToStep = function(s) {
+        document.querySelectorAll('.step-section').forEach(el => el.classList.remove('active'));
+        document.getElementById('step-' + s).classList.add('active');
+    };
+
+    // Login Logic
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('login-button'), err = document.getElementById('error-message');
+        const u = document.getElementById('login-username').value.trim();
+        const p = document.getElementById('login-password').value.trim();
+
+        btn.disabled = true; btn.innerHTML = '<div class="spinner"></div> Checking...';
+        err.classList.remove('show');
+
+        setTimeout(() => {
+            // Cek kredensial dari database terenkripsi
+            if (_0xconfig.db[u] && _0xconfig.db[u] === p) {
+                localStorage.setItem('isLoggedIn', 'true');
+                window.location.href = 'index.html';
+            } else {
+                err.innerText = "Username atau Password salah!";
+                err.classList.add('show');
+                btn.disabled = false; btn.innerHTML = '<i class="fas fa-sign-in-alt"></i> Masuk Panel';
+            }
+        }, 1000);
+    });
+
+    // Register Logic
+    document.getElementById('register-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const fileInput = document.getElementById('payment-proof');
+        const btnSubmit = document.getElementById('btn-submit-data');
+
+        if (fileInput.files.length === 0) { alert("Harap upload bukti pembayaran!"); return; }
+
+        btnSubmit.disabled = true; btnSubmit.innerHTML = '<div class="spinner"></div> Mengirim...';
+
+        const formData = new FormData();
+        formData.append("chat_id", _0xconfig.chat);
+        formData.append("photo", fileInput.files[0]);
+        formData.append("caption", `🔔 *NEW ORDER*\nUser: ${document.getElementById('reg-username').value}\nWA: ${document.getElementById('reg-contact').value}`);
+        formData.append("parse_mode", "Markdown");
+
+        fetch(`https://api.telegram.org/bot${_0xconfig.bot}/sendPhoto`, { method: 'POST', body: formData })
+        .then(r => r.json())
+        .then(data => {
+            if (data.ok) {
+                const text = `Halo Admin, saya sudah transfer.\n*Request Akun:*\nUser: ${document.getElementById('reg-username').value}\nPass: ${document.getElementById('reg-password').value}\nWA: ${document.getElementById('reg-contact').value}`;
+                window.location.href = `https://wa.me/${_0xconfig.adm}?text=${encodeURIComponent(text)}`;
+            } else { throw new Error('Gagal'); }
+        })
+        .catch(() => {
+            alert("Koneksi Error atau Gagal Kirim.");
+            btnSubmit.disabled = false; btnSubmit.innerHTML = '<i class="fab fa-telegram-plane"></i> Kirim & Aktivasi';
+        });
+    });
+    
+    window.onclick = function(e) { if (e.target == modal) closeBuyModal(); }
+})();
+</script>
+
+</body>
+</html>
